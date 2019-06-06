@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
+import { black } from 'styles/common';
 
 const styles = StyleSheet.create({
   input: {
-    borderColor: 'black',
+    borderColor: black,
     borderWidth: .5,
-    fontFamily: 'OpenSans-Bold',
     fontSize: 14,
     height: 37,
     letterSpacing: 2.1,
@@ -12,7 +12,6 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   label: {
-    fontFamily: 'OpenSans-SemiBold',
     fontSize: 11,
     letterSpacing: 1.65,
     textAlign: 'center'

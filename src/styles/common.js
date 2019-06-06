@@ -1,8 +1,11 @@
 import { StyleSheet } from 'react-native';
 
 const constants = StyleSheet.create({
-  customFont: {
+  boldText: {
     fontFamily: 'OpenSans-Bold'
+  },
+  semiBoldText: {
+    fontFamily: 'OpenSans-SemiBold'
   },
   mainButton: {
     alignItems: 'center',
@@ -21,3 +24,8 @@ const constants = StyleSheet.create({
 });
 
 export default constants;
+
+// Colors
+
+export const background = '#F5FCFF';
+export const black = '#000000';
