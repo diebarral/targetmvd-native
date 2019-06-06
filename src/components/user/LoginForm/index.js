@@ -25,14 +25,14 @@ const LoginForm = ({ handleSubmit, error, submitting }) => (
       component={Input}
       password
     />
+    <View style={styles.submitButtonContainer}>
     { submitting ?
       <ActivityIndicator /> :
-      <View style={styles.submitButtonContainer}>
         <TouchableOpacity style={constants.mainButton} onPress={handleSubmit}>
           <Text style={constants.mainButtonText}>{translate('SIGN_IN.button').toUpperCase()}</Text>
         </TouchableOpacity>
-      </View>
-    }
+      }
+    </View>
   </View>
 );
 
