@@ -1,9 +1,12 @@
 export default {
   SIGN_IN: {
     title: 'Iniciar sesión',
-    email: 'Email',
+    target: 'Target MVD',
+    username: 'Usuario',
     password: 'Contraseña',
-    button: 'Iniciar sesión'
+    button: 'Iniciar sesión',
+    forgotPassword: '¿Olvidó su contraseña?',
+    facebook: 'Conectar con Facebook'
   },
 
   MAIN_SCREEN: {

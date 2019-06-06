@@ -1,9 +1,12 @@
 export default {
   SIGN_IN: {
     title: 'Sign in',
-    email: 'Email',
+    target: 'Target MVD',
+    username: 'Username',
     password: 'Password',
-    button: 'Sign in'
+    button: 'Sign in',
+    forgotPassword: 'Forgot your password?',
+    facebook: 'Connect with Facebook'
   },
 
   MAIN_SCREEN: {
