@@ -5,7 +5,7 @@ import styles from './styles';
 
 const Input = ({ input: { onChange, ...restInput }, password = false, label, meta: { touched, error } }) => (
   <View>
-    {label && <Text>{label}</Text>}
+    {label && <Text style={styles.label}>{label}</Text>}
     <View>
       <TextInput
         style={styles.input}
