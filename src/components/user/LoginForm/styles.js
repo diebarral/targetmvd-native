@@ -1,11 +1,18 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  button: {
-    alignSelf: 'center',
-    borderColor: 'lightblue',
-    borderRadius: 5,
-    borderWidth: 2,
+  container: {
+    marginBottom: 20,
+    marginLeft: 70,
+    marginRight: 70,
+    marginTop: 70,
+    width: 180
+  },
+  submitButtonContainer: {
+    alignItems: 'center',
+    height: 20,
+    marginTop: 22,
+    marginBottom: 18
   }
 });
 

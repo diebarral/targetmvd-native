@@ -1,14 +1,15 @@
 import React from 'react';
 import { bool, object, string } from 'prop-types';
 import { View, TextInput, Text } from 'react-native';
+import constants from 'styles/common';
 import styles from './styles';
 
 const Input = ({ input: { onChange, ...restInput }, password = false, label, meta: { touched, error } }) => (
   <View>
-    {label && <Text>{label}</Text>}
+    {label && <Text style={[constants.boldText, styles.label]}>{label}</Text>}
     <View>
       <TextInput
-        style={styles.input}
+        style={[constants.semiBoldText, styles.input]}
         onChangeText={onChange}
         secureTextEntry={password}
         {...restInput}

@@ -2,37 +2,37 @@ import React from 'react';
 import { bool, func, string } from 'prop-types';
 import { Field, reduxForm } from 'redux-form/immutable';
 import {
-  ActivityIndicator, Button, Text, View,
+  ActivityIndicator, Button, Text, View, TouchableOpacity
 } from 'react-native';
 
 import Input from 'components/common/Input';
 import * as constraints from 'utils/constraints';
 import translate from 'utils/i18n';
 import styles from './styles';
+import constants from 'styles/common';
 
 const LoginForm = ({ handleSubmit, error, submitting }) => (
-  <View onSubmit={handleSubmit}>
+  <View style={styles.container} onSubmit={handleSubmit}>
     {error && <Text>{error}</Text>}
     <Field
       name="email"
-      label={translate('SIGN_IN.email')}
+      label={translate('SIGN_IN.username').toUpperCase()}
       component={Input}
     />
     <Field
       name="password"
-      label={translate('SIGN_IN.password')}
+      label={translate('SIGN_IN.password').toUpperCase()}
       component={Input}
       password
     />
+    <View style={styles.submitButtonContainer}>
     { submitting ?
       <ActivityIndicator /> :
-      <View style={styles.button}>
-        <Button
-          title={translate('SIGN_IN.button')}
-          onPress={handleSubmit}
-        />
-      </View>
-    }
+        <TouchableOpacity style={constants.mainButton} onPress={handleSubmit}>
+          <Text style={constants.mainButtonText}>{translate('SIGN_IN.button').toUpperCase()}</Text>
+        </TouchableOpacity>
+      }
+    </View>
   </View>
 );
 

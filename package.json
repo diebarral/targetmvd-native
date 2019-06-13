@@ -52,5 +52,10 @@
     "react-dom": "^16.8.6",
     "react-test-renderer": "16.8.3",
     "redux-logger": "^3.0.6"
-  }
+  },
+  "rnpm": {
+		"assets": [
+			"./src/assets/fonts/"
+		]
+	}
 }

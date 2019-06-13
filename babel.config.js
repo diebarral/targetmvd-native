@@ -7,6 +7,7 @@ module.exports = {
         alias: {
           actions: './src/actions',
           api: './src/api',
+          assets: './src/assets',
           components: './src/components',
           constants: './src/constants',
           containers: './src/containers',
@@ -15,6 +16,7 @@ module.exports = {
           screens: './src/screens',
           selectors: './src/selectors',
           store: './src/store',
+          styles: './src/styles',
           utils: './src/utils'
         }
       }

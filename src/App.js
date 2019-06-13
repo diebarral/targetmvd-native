@@ -43,6 +43,16 @@ class App {
   }
 
   start() {
+    Navigation.setDefaultOptions({
+      topBar: {
+        visible: false,
+        drawBehind: true,
+        animate: false,
+      },
+      layout: {
+        backgroundColor: 'white',
+      }
+    });
     Navigation.setRoot({
       root: {
         stack: {
