@@ -12,7 +12,7 @@
     "humps": "^2.0.1",
     "i18n-js": "^3.2.1",
     "immutable": "^3.8.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "prop-types": "^15.7.2",
     "query-string": "^6.5.0",
     "react": "16.8.3",
